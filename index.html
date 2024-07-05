@@ -1,0 +1,43 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooter.io</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+    integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js" defer></script>
+  <script src="./JAVASCRIPT/classes/Enemy.js" defer></script>
+  <script src="./JAVASCRIPT/classes/Player.js" defer></script>
+  <script src="./JAVASCRIPT/classes/Particle.js" defer></script>
+  <script src="./JAVASCRIPT/classes/Projectile.js" defer></script>
+  <script src="./JAVASCRIPT/frontend.js" defer></script>
+  <script src="./JAVASCRIPT/eventListeners.js" defer></script>
+</head>
+
+<body>
+  <div class="leaderboard-box">
+    <div class="leaderboard">Leaderboard</div>
+    <div id="playerLabels"></div>
+  </div>
+  <canvas></canvas>
+
+  <div class="input-box">
+    <form id="usernameForm">
+      <div>
+        <input id="usernameInput" type="text" placeholder="Username">
+      </div>
+
+      <div class="start-btn-box">
+        <button class="start-btn">Join</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
